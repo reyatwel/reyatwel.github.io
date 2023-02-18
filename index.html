@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rey Atwel - Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<!-- Sidebar with image -->
+<nav class="rey-sidebar rey-hide-medium rey-hide-small" style="width:40%">
+    <div class="bgimg"></div>
+</nav>
+
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<nav class="rey-sidebar rey-black rey-animate-right rey-xxlarge"
+     style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+    <a href="javascript:void(0)" onclick="closeNav()" class="rey-button rey-black rey-xxxlarge rey-display-topright"
+       style="padding:0 12px;">
+        <i class="fa fa-remove"></i>
+    </a>
+    <div class="rey-bar-block rey-center">
+        <a href="#" class="rey-bar-item rey-button rey-text-grey rey-hover-black" onclick="closeNav()">Home</a>
+        <a href="#portfolio" class="rey-bar-item rey-button rey-text-grey rey-hover-black" onclick="closeNav()">Portfolio</a>
+        <a href="#about" class="rey-bar-item rey-button rey-text-grey rey-hover-black" onclick="closeNav()">About</a>
+        <a href="#contact" class="rey-bar-item rey-button rey-text-grey rey-hover-black"
+           onclick="closeNav()">Contact</a>
+    </div>
+</nav>
+
+<!-- Page Content -->
+<div class="rey-main rey-padding-large" style="margin-left:40%">
+
+    <!-- Menu icon to open sidebar -->
+    <span class="rey-button rey-top rey-white rey-xxlarge rey-text-grey rey-hover-text-black"
+          style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+    <!-- Header -->
+    <header class="rey-container rey-center" style="padding:128px 16px" id="home">
+        <h1 class="rey-jumbo"><b>Rey Atwel</b></h1>
+        <p>Designer and Web Developer.</p>
+        <img src="./assets/img/rey_atwel_2.jpg" class="rey-image rey-hide-large rey-hide-small rey-round"
+             style="display:block;width:60%;margin:auto;" alt="">
+        <img src="./assets/img/rey_atwel_2.jpg" class="rey-image rey-hide-large rey-hide-medium rey-round" width="1000"
+             height="1333" alt="">
+        <button class="rey-button rey-light-grey rey-padding-large rey-margin-top">
+            <i class="fa fa-download"></i> Download Resume
+        </button>
+    </header>
+
+    <!-- Portfolio Section -->
+    <div class="rey-padding-32 rey-content" id="portfolio">
+        <h2 class="rey-text-grey">My Portfolio</h2>
+        <hr class="rey-opacity">
+
+        <!-- Grid for photos -->
+        <div class="rey-row-padding" style="margin:0 -16px">
+            <div class="rey-half">
+                <!--<img src="./assets/img/prime_ventures_builder.jpg" style="width:100%">-->
+                <img src="./assets/img/bitcash.jpg" data-show="./assets/img/portfolio-bitcash.jpg" style="width:100%"
+                     onclick="show(this)" alt="BitCash">
+                <img src="./assets/img/p2ptrades.jpg" data-show="./assets/img/portfolio-p2ptrades.jpg"
+                     style="width:100%" onclick="show(this)" alt="P2PTrades">
+            </div>
+
+            <div class="rey-half">
+                <img src="./assets/img/peratoken.jpg" data-show="./assets/img/portfolio-peratoken.jpg"
+                     style="width:100%" onclick="show(this)" alt="PeraToken">
+                <img src="./assets/img/create.jpg" data-show="./assets/img/portfolio-create.jpg" style="width:100%"
+                     onclick="show(this)" alt="Create">
+                <img src="./assets/img/prime_ventures_builder.jpg"
+                     data-show="./assets/img/portfolio-prime_ventures_builder.jpg"
+                     style="width:100%" onclick="show(this)" alt="Prime Ventures Builder">
+                <img src="./assets/img/1wayhi.jpg" data-show="./assets/img/portfolio-1wayhi.jpg" style="width:100%"
+                     onclick="show(this)" alt="One Way Hi">
+            </div>
+            <!-- End photo grid -->
+        </div>
+        <!-- End Portfolio Section -->
+    </div>
+
+    <!-- About Section -->
+    <div class="rey-content rey-justify rey-text-grey rey-padding-32" id="about">
+        <h2>About</h2>
+        <hr class="rey-opacity">
+        <p>Experienced web developer with a strong background in HTML 5, jQuery, CSS3, PHP, MySQL, and Joomla. Proven
+            ability to create user-friendly and visually appealing websites and web applications. Adept at
+            problem-solving and troubleshooting.</p>
+        <h3 class="rey-padding-16">My Skills</h3>
+        <p class="rey-wide">Graphics Design</p>
+        <div class="rey-light-grey">
+            <div class="rey-container rey-center rey-padding-small rey-dark-grey" style="width:95%">95%</div>
+        </div>
+        <p class="rey-wide">Web Design</p>
+        <div class="rey-light-grey">
+            <div class="rey-container rey-center rey-padding-small rey-dark-grey" style="width:85%">85%</div>
+        </div>
+        <p class="rey-wide">Web Development</p>
+        <div class="rey-light-grey">
+            <div class="rey-container rey-center rey-padding-small rey-dark-grey" style="width:80%">80%</div>
+        </div>
+        <br>
+
+        <div class="rey-row rey-center rey-dark-grey rey-padding-16 rey-section">
+            <div class="rey-quarter rey-section">
+                <span class="rey-xlarge">14+</span><br>
+                Partners
+            </div>
+            <div class="rey-quarter rey-section">
+                <span class="rey-xlarge">33+</span><br>
+                Projects Done
+            </div>
+            <div class="rey-quarter rey-section">
+                <span class="rey-xlarge">50+</span><br>
+                Happy Clients
+            </div>
+            <div class="rey-quarter rey-section">
+                <span class="rey-xlarge">150+</span><br>
+                Meetings
+            </div>
+        </div>
+
+        <button class="rey-button rey-light-grey rey-padding-large rey-section">
+            <i class="fa fa-download"></i> Download Resume
+        </button>
+
+        <!-- Testimonials -->
+        <h3 class="rey-padding-24">My Reputation</h3>
+        <img src="./assets/img/wilmar_calderon.jpg" alt="Avatar" class="rey-left rey-circle rey-margin-right"
+             style="width:80px">
+        <p><span class="rey-large rey-text-black rey-margin-right">Wilmar Calderon.</span> Web Developer.</p>
+        <p>Rey Atwel is just awesome. I am so happy to have met him!</p><br>
+
+        <img src="./assets/img/charles_managdag.jpg" alt="Avatar" class="rey-left rey-circle rey-margin-right"
+             style="width:80px">
+        <p><span class="rey-large rey-text-black rey-margin-right">Charles Managdag.</span> CEO at Toyoken Trading.</p>
+        <p>Rey Atwel saved us from a web disaster.</p><br>
+
+        <img src="./assets/img/joe_lagseng.jpg" alt="Avatar" class="rey-left rey-circle rey-margin-right"
+             style="width:80px">
+        <p><span class="rey-large rey-text-black rey-margin-right">Joe Lagseng.</span> CEO at Prime Ventures Builder.
+        </p>
+        <p>No one is better than Rey Atwel when it comes to understanding the client's side of things.</p><br>
+
+        <!-- Grid for pricing tables -->
+        <h3 class="rey-padding-16">My Price</h3>
+        <div class="rey-row-padding" style="margin:0 -16px">
+            <div class="rey-half rey-margin-bottom">
+                <ul class="rey-ul rey-center rey-card rey-hover-shadow">
+                    <li class="rey-dark-grey rey-xlarge rey-padding-32">Basic</li>
+                    <li class="rey-padding-16">Web Design</li>
+                    <li class="rey-padding-16">Graphics Design</li>
+                    <li class="rey-padding-16">Frontend Development</li>
+                    <li class="rey-padding-16">Backend Development</li>
+                    <li class="rey-padding-16">
+                        <h2>$ 10</h2>
+                        <span class="rey-opacity">per month</span>
+                    </li>
+                    <li class="rey-light-grey rey-padding-24">
+                        <button class="rey-button rey-white rey-padding-large rey-hover-black">Sign Up</button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="rey-half">
+                <ul class="rey-ul rey-center rey-card rey-hover-shadow">
+                    <li class="rey-black rey-xlarge rey-padding-32">Pro</li>
+                    <li class="rey-padding-16">Web Design</li>
+                    <li class="rey-padding-16">Graphics Design</li>
+                    <li class="rey-padding-16">Frontend Development</li>
+                    <li class="rey-padding-16">Backend Development</li>
+                    <li class="rey-padding-16">
+                        <h2>$ 25</h2>
+                        <span class="rey-opacity">per month</span>
+                    </li>
+                    <li class="rey-light-grey rey-padding-24">
+                        <button class="rey-button rey-white rey-padding-large rey-hover-black">Sign Up</button>
+                    </li>
+                </ul>
+            </div>
+            <!-- End Grid/Pricing tables -->
+        </div>
+
+        <h3 class="rey-padding-24">My Hobbies</h3>
+        <p>As I step onto the forest path, my senses are immediately enlivened by the sounds and smell of the natural
+            world. The soft crunch of leaves beneath my feet, the chirping of birds in the trees, and the gentle
+            rustling of the wind through the branches all create a symphony of sounds that fills me with a sense of
+            peace and tranquility. The scent of pine needles and damp earth, mixed with the sweet fragrance of
+            wildflowers, fills my nostrils, reminding me that I am surrounded by life and vitality. With each step, I
+            feel my body relax and my mind clear, as the stresses of the day melt away in the embrace of nature. Walking
+            on nature's ground is more than just a hobby for me - it is a way to connect with the world around me and
+            find inner balance and harmony.</p>
+
+        <!-- End About Section -->
+    </div>
+
+    <!-- Contact Section -->
+    <div class="rey-padding-32 rey-content rey-text-grey" id="contact" style="margin-bottom:64px">
+        <h2>Contact Me</h2>
+        <hr class="rey-opacity">
+
+        <div class="rey-section">
+            <p><i class="fa fa-map-marker fa-fw rey-xxlarge rey-margin-right"></i> Baguio City, Philippines</p>
+            <p><i class="fa fa-phone fa-fw rey-xxlarge rey-margin-right"></i> Phone: +63 927 290 0665</p>
+            <p><i class="fa fa-envelope fa-fw rey-xxlarge rey-margin-right"> </i> Email: creators@gmx.com</p>
+        </div>
+
+        <!-- Image of location/map -->
+        <img src="./assets/img/map.jpg" class="rey-image rey-greyscale" style="width:100%;margin:32px 0" alt="">
+
+        <p>Lets get in touch. Send me a message:</p>
+        <form>
+            <p><label>
+                <input class="rey-input rey-padding-16 rey-border" type="text" placeholder="Name" required name="Name">
+            </label>
+            </p>
+            <p><label>
+                <input class="rey-input rey-padding-16 rey-border" type="text" placeholder="Email" required
+                       name="Email">
+            </label>
+            </p>
+            <p><label>
+                <input class="rey-input rey-padding-16 rey-border" type="text" placeholder="Subject" required
+                       name="Subject">
+            </label></p>
+            <p><label>
+                <textarea class="rey-input rey-padding-16 rey-border" type="text" placeholder="Message" required
+                          name="Message"></textarea>
+            </label></p>
+            <p>
+                <button class="rey-button rey-light-grey rey-padding-large" type="submit">
+                    <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                </button>
+            </p>
+        </form>
+        <!-- End Contact Section -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="rey-container rey-padding-64 rey-light-grey rey-center rey-opacity rey-xlarge" style="margin:-24px">
+        <i class="fa fa-facebook-official rey-hover-opacity"></i>
+        <i class="fa fa-instagram rey-hover-opacity"></i>
+        <i class="fa fa-snapchat rey-hover-opacity"></i>
+        <i class="fa fa-pinterest-p rey-hover-opacity"></i>
+        <i class="fa fa-twitter rey-hover-opacity"></i>
+        <i class="fa fa-linkedin rey-hover-opacity"></i>
+        <p class="rey-medium">&copy;
+            <script>document.write(/\d{4}/.exec(Date())[0])</script>
+            Rey Atwel - Portfolio
+        </p>
+        <!-- End footer -->
+    </footer>
+
+    <!-- END PAGE CONTENT -->
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="rey-modal rey-black" onclick="this.style.display='none'">
+    <span class="rey-button rey-xxlarge rey-black rey-padding-large rey-display-topright"
+          title="Close Modal Image">&times;</span>
+    <div class="rey-modal-content rey-animate-zoom rey-center rey-transparent rey-padding-64">
+        <img id="img01" class="rey-image" alt="" src="">
+        <p id="caption" class="rey-opacity rey-large"></p>
+    </div>
+</div>
+
+<script>
+    function show(element) {
+        document.getElementById("img01").src = element.dataset.show;
+        document.getElementById("modal01").style.display = "block";
+        const captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+    }
+
+    // Open and close sidebar
+    function openNav() {
+        document.getElementById("mySidebar").style.width = "60%";
+        document.getElementById("mySidebar").style.display = "block";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidebar").style.display = "none";
+    }
+</script>
+
+</body>
+</html>
