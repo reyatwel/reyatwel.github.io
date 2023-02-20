@@ -551,6 +551,10 @@ a {
     clear: both
 }
 
+.rey-half img {
+    cursor: pointer;
+}
+
 .rey-col, .rey-half, .rey-third, .rey-twothird, .rey-threequarter, .rey-quarter {
     float: left;
     width: 100%
@@ -1758,8 +1762,4 @@ body, h1, h2, h3, h4, h5, h6 {
     background-size: cover;
     background-image: url('../img/rey_atwel_2.jpg');
     min-height: 100%;
-}
-
-.rey-half img {
-    cursor: pointer;
 }
