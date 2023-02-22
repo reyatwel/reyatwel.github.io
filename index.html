@@ -51,7 +51,7 @@
              style="display:block;width:60%;margin:auto;" alt="">
         <img src="./assets/img/rey_atwel.jpg" class="rey-image rey-hide-large rey-hide-medium rey-round" width="1000"
              height="1333" alt="">
-        <button class="rey-button rey-light-grey rey-padding-large rey-margin-top">
+        <button class="rey-button rey-light-grey rey-padding-large rey-margin-top" onclick="show_pdf()">
             <i class="fa fa-download"></i> Download Resume
         </button>
     </header>
@@ -286,12 +286,24 @@
     </div>
 </div>
 
+<div id="modal02" class="rey-modal rey-black" onclick="this.style.display='none'">
+    <span class="rey-button rey-xxlarge rey-black rey-padding-large rey-display-topright"
+          title="Close Modal Image">&times;</span>
+    <div class="rey-modal-content rey-animate-zoom rey-center rey-transparent rey-padding-64">
+        <embed src="./assets/WD45%20(Atwel,%20Ribomaphil%20Isagani%20M.).pdf" width="800" height="500">
+    </div>
+</div>
+
 <script>
     function show(element) {
         document.getElementById("img01").src = element.dataset.show;
         document.getElementById("modal01").style.display = "block";
         const captionText = document.getElementById("caption");
         captionText.innerHTML = element.alt;
+    }
+
+    function show_pdf() {
+        document.getElementById("modal02").style.display = "block";
     }
 
     // Open and close sidebar
