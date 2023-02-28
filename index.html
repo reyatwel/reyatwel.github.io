@@ -230,23 +230,22 @@
         <img src="./assets/img/map.jpg" class="rey-image rey-greyscale" style="width:100%;margin:32px 0" alt="">
 
         <p>Lets get in touch. Send me a message:</p>
-        <form>
+        <form action="https://formsubmit.co/creators@gmx.com" method="POST">
             <p><label>
-                <input class="rey-input rey-padding-16 rey-border" type="text" placeholder="Name" required name="Name">
-            </label>
-            </p>
-            <p><label>
-                <input class="rey-input rey-padding-16 rey-border" type="text" placeholder="Email" required
-                       name="Email">
-            </label>
-            </p>
-            <p><label>
-                <input class="rey-input rey-padding-16 rey-border" type="text" placeholder="Subject" required
-                       name="Subject">
+                <input type="text" name="name" class="rey-input rey-padding-16 rey-border"
+                       placeholder="Full Name" required>
             </label></p>
             <p><label>
-                <textarea class="rey-input rey-padding-16 rey-border" type="text" placeholder="Message" required
-                          name="Message"></textarea>
+                <input type="email" name="email" class="rey-input rey-padding-16 rey-border"
+                       placeholder="Email Address" required>
+            </label></p>
+            <p><label>
+                <input type="text" name="subject" class="rey-input rey-padding-16 rey-border"
+                       placeholder="Subject" required>
+            </label></p>
+            <p><label>
+                <textarea name="message" class="rey-input rey-padding-16 rey-border"
+                          placeholder="Your Message" rows="10" required></textarea>
             </label></p>
             <p>
                 <button class="rey-button rey-light-grey rey-padding-large" type="submit">
@@ -318,6 +317,16 @@
     function closeNav() {
         document.getElementById("mySidebar").style.display = "none";
     }
+</script>
+
+<script>
+    $(document).ready(function(){
+        $('.form').on('submit', function(){
+            swal("Title", "Message Content", "success", {
+                button: "Ok",
+            });
+        });
+    });
 </script>
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
